@@ -13,8 +13,10 @@ def detect_saved_video(video_path):
         print(f"Error: '{video_path}' 파일을 열 수 없습니다. 경로를 확인하세요.")
         return
 
+    frame_jump = 10  # 10프레임씩 이동
+    print(f"10프레임 단위로 이동 설정 완료")
+
     is_paused = False  # 일시정지 상태를 추적하는 변수
-    frame_jump = 30  # 방향키로 이동할 프레임 수 (1초 기준 약 30fps)
 
     while True:
         if not is_paused:
@@ -41,12 +43,17 @@ def detect_saved_video(video_path):
             break
         elif key == 32:  # 스페이스바: 일시정지/재생 전환
             is_paused = not is_paused
-        elif key == 83:  # 오른쪽 방향키 (프레임 앞으로 이동)
+        elif key == ord('d'):  # D 키: +10프레임 앞으로 이동
             current_frame = int(cap.get(cv2.CAP_PROP_POS_FRAMES))
-            cap.set(cv2.CAP_PROP_POS_FRAMES, current_frame + frame_jump)
-        elif key == 81:  # 왼쪽 방향키 (프레임 뒤로 이동)
+            total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+            new_frame = min(total_frames - 1, current_frame + frame_jump)
+            cap.set(cv2.CAP_PROP_POS_FRAMES, new_frame)
+            print(f"+10프레임 이동: {new_frame}/{total_frames} 프레임")
+        elif key == ord('a'):  # A 키: -10프레임 뒤로 이동
             current_frame = int(cap.get(cv2.CAP_PROP_POS_FRAMES))
-            cap.set(cv2.CAP_PROP_POS_FRAMES, max(0, current_frame - frame_jump))
+            new_frame = max(0, current_frame - frame_jump)
+            cap.set(cv2.CAP_PROP_POS_FRAMES, new_frame)
+            print(f"-10프레임 이동: {new_frame}/{int(cap.get(cv2.CAP_PROP_FRAME_COUNT))} 프레임")
 
     # 자원 해제
     cap.release()
