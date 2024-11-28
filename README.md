@@ -39,7 +39,16 @@
 
 ![image](https://github.com/user-attachments/assets/9b2421ba-6c23-4f0f-b69e-a4fcf9ff6726)
 
+# YGNDR.PT  11.27
+![image](https://github.com/user-attachments/assets/2c8e1299-7106-442b-8b34-e1bcf1941ab3)
+
+
+# 젯슨 환경에서 객체 인식 성공(웹캠 연결)
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://github.com/user-attachments/assets/907e6a1a-738c-47ef-a28e-e15a8f31c2d8" alt="테스트 화면" style="width: 49%;"/>
+    <img src="https://github.com/user-attachments/assets/b6e27c77-8a55-42a2-bb42-dc69aabedb68" alt="테스트 화면2" style="width: 49%;"/>
 </details>
+
 
 
 
