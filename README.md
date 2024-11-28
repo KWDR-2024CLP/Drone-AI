@@ -41,5 +41,7 @@
 
 </details>
 
+# YGNDR.PT  11.27
+![image](https://github.com/user-attachments/assets/2c8e1299-7106-442b-8b34-e1bcf1941ab3)
 
 
