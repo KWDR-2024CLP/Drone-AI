@@ -68,5 +68,5 @@ def detect_saved_video(video_path):
     print(f"탐지 결과가 {output_path}에 저장되었습니다.")
 
 # 사용 예시
-video_path = "Sample/5.mp4"  # 드론 비디오 경로
+video_path = "D:/Sample/sample2.mov"  # 드론 비디오 경로
 detect_saved_video(video_path)
