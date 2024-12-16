@@ -49,6 +49,9 @@
     <img src="https://github.com/user-attachments/assets/b6e27c77-8a55-42a2-bb42-dc69aabedb68" alt="테스트 화면2" style="width: 49%;"/>
 </details>
 
+실제 드론 비행 영상에 적용. 
+![image](https://github.com/user-attachments/assets/aa8cfe80-5d7d-4c1b-9d2a-c386cdaa0094)
+
 
 
 
